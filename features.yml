@@ -8,7 +8,7 @@ flags:
   variants:
   - key: variant1
     name: variant1
-    description: variant description
+    description: nice description 
   rules:
   - segment: segment1
     distributions:
