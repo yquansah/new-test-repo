@@ -3,7 +3,6 @@ namespace: default
 flags:
 - key: flag1
   name: flag1
-  type: VARIANT_FLAG_TYPE
   enabled: true
   variants:
   - key: variant1
