@@ -30,7 +30,7 @@ segments:
   name: segment1
   description: description
   constraints:
-  - type: ENTITY_ID_COMPARISON_TYPE
+  - type: STRING_COMPARISON_TYPE 
     property: entityId
     operator: eq
     value: ybquansah@gmail.com
