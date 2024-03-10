@@ -21,7 +21,7 @@ flags:
     rollouts:
       - segment:
           key: segment1
-          value: false
+          value: true
       - threshold:
           percentage: 50
           value: true
