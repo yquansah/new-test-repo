@@ -24,7 +24,7 @@ flags:
           value: true
       - threshold:
           percentage: 50
-          value: true
+          value: false
 segments:
   - key: segment1
     name: segment1
