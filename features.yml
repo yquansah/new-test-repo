@@ -16,7 +16,7 @@ flags:
             rollout: 100
   - key: flag_boolean
     name: flag_boolean
-    type: BOOLEAN_FLAG_TYPE
+    type: OOLEAN_FLAG_TYPE
     enabled: true
     rollouts:
       - segment:
