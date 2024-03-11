@@ -16,7 +16,7 @@ flags:
             rollout: 100
   - key: flag_boolean
     name: flag_boolean
-    type: OOLEAN_FLAG_TYPE
+    type: BOOLEAN_FLAG_TYPE
     enabled: true
     rollouts:
       - segment:
@@ -34,4 +34,4 @@ segments:
         property: new_property
         operator: eq
         value: ybquansah@gmail.com
-    match_type: ANY_MATCH_TYPE
+    match_type: NY_MATCH_TYPE
