@@ -18,5 +18,4 @@ jobs:
 
       - name: Check this out
         run: |
-          echo "These are the committers ${{ github.action_repository }}"
-          echo "This PR is opened by ${{ github.event.pull_request.user.login }} ."
+          echo "$GITHUB_CONTEXT"
