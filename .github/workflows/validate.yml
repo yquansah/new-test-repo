@@ -17,5 +17,7 @@ jobs:
       #     cmd: "jq . ${{ github.event.push }} -R"
 
       - name: Check this out
+        env:
+          GITHUB_COMMITTERS: "hello"
         run: |
-          echo "$GITHUB_CONTEXT"
+          echo "$GITHUB_COMMITTERS"
