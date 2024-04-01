@@ -10,6 +10,12 @@ jobs:
     name: Sample Workflow
     runs-on: ubuntu-latest
     steps:
+      - name: Extract version from package.json
+        uses: sergeysova/jq-action@v2
+        id: authors
+        with:
+          cmd: "jq . ${{ github.event.push }} -R"
+
       - name: Check this out
         run: |
-          echo "These are the committers ${github.event.push.commits}"
+          echo "These are the committers ${{ steps.authors.outputs.value }}"
