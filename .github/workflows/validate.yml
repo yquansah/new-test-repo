@@ -10,14 +10,14 @@ jobs:
     name: Sample Workflow
     runs-on: ubuntu-latest
     steps:
-      # - name: Extract version from package.json
-      #   uses: sergeysova/jq-action@v2
-      #   id: authors
-      #   with:
-      #     cmd: "jq . ${{ github.event.push }} -R"
+      - name: Extract version from package.json
+        uses: sergeysova/jq-action@v2
+        id: authors
+        with:
+          cmd: "jq . ${{ github.event.push }} -R"
 
       - name: Check this out
         env:
-          GITHUB_COMMITTERS: ${{ toJson(github) }}
+          GITHUB_COMMITTERS: ${{ toJson(github.event.commits) }}
         run: |
           echo "$GITHUB_COMMITTERS"
